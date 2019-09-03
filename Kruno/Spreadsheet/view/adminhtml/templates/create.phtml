@@ -1,0 +1,30 @@
+<?php
+/**
+ * Creation of the spreadsheet.
+ */
+
+$myData = str_replace('"', '\"', $block->getModelData());
+?>
+
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "create": {
+                    "component": "Kruno_Spreadsheet/js/create",
+                    "template": "Kruno_Spreadsheet/create/create",
+                    "myData": "<?php echo $myData ?>"
+                }
+            }
+        }
+    }
+}
+</script>
+
+
+
+<div data-bind="scope: 'create'">
+    <!-- ko template: 'Kruno_Spreadsheet/create/create' --><!-- /ko -->
+</div>

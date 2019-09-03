@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Kruno_Spreadsheet::top_level_menu" 
+            toolTip="Cats love to play." 
+            title="Spreadsheet" 
+            module="Kruno_Spreadsheet" 
+            sortOrder="30" 
+            resource="Magento_Backend::content" />
+
+        <add id="Kruno_Spreadsheet::main" 
+            title="Spreadsheet" 
+            module="Kruno_Spreadsheet" 
+            sortOrder="1" 
+            parent="Kruno_Spreadsheet::top_level_menu" 
+            dependsOnModule="Kruno_Spreadsheet" 
+            resource="Kruno_Spreadsheet::index" />
+
+        <add id="Kruno_Spreadsheet::main_title" 
+            title="Create" 
+            module="Kruno_Spreadsheet" 
+            sortOrder="2" 
+            parent="Kruno_Spreadsheet::main" 
+            resource="Magento_Backend::content"
+            action="krunospreadsheet/main" />
+    </menu>
+</config>
