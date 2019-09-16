@@ -19,10 +19,10 @@ class Create extends \Magento\Framework\View\Element\Template
 
 
     public function getModelData(): string {
-        $data =  $this->jsonHelper->jsonEncode([
+        $data =  $this->escapeJs($this->jsonHelper->jsonEncode([
             'a' => 1,
             'b' => 2
-        ]);
+        ]));
 
         return $data;
     }

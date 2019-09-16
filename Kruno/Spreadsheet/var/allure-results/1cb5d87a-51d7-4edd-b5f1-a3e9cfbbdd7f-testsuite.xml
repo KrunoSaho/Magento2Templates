@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alr:test-suite xmlns:alr="urn:model.allure.qatools.yandex.ru" start="1568524604070" stop="1568524604075" version="1.4.0">
+  <name>Kruno\Spreadsheet\Test\Unit\Model\KrunoTest</name>
+  <test-cases>
+    <test-case start="1568524604070" stop="1568524604074" status="passed">
+      <name>testGet</name>
+    </test-case>
+  </test-cases>
+</alr:test-suite>

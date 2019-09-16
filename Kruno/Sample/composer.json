@@ -1,0 +1,29 @@
+{
+    "name": "Kruno/Sample",
+    "description": "Sample",
+    "require": {
+        "php": "|~7.2.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Krunoslav Saho",
+            "email": "email@email.com",
+            "homepage": "http://localhost",
+            "role": "Author"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Kruno\\Sample\\": ""
+        }
+    }
+}

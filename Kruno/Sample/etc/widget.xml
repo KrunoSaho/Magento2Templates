@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+  <widget class="Kruno\Sample\Block\Widget\CategoryViewerBlock" id="kruno_sample_categoryviewer">
+    <label>Sample Category Viewer</label>
+
+    <description>Displays a complete list of categories.</description>
+  </widget>
+</widgets>

@@ -1,0 +1,23 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Unit Test",
+            "command": "/var/www/magento/vendor/bin/phpunit -c /var/www/magento/dev/tests/unit/phpunit.xml.dist /var/www/magento/app/code/Kruno/",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            
+            "label": "Code Sniffer",
+            "type": "shell",
+            "command": "php /var/www/magento/vendor/squizlabs/php_codesniffer/bin/phpcs /var/www/magento/app/code/Kruno/",
+            "dependsOn": ["Unit Test"]
+        }
+    ]
+}
