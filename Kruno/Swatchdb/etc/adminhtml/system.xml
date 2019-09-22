@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="krunoswatchdb" translate="label" sortOrder="100"> 
+            <label>SwatchDB</label>
+        </tab>
+
+        <section id="krunoswatchdb" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Config</label>
+            <tab>krunoswatchdb</tab>
+
+            <resource>Kruno_Swatchdb::swatchdb_config</resource>
+
+            <group id="category_group" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Configure</label>
+
+                <field id="select_category" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Select category root.</label>
+                    <source_model>\Kruno\Swatchdb\Model\Config\CategoryList</source_model>
+                </field>
+            </group>
+
+            <!-- <group id="product_attribute" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Configure</label>
+
+                <field id="select_attribute" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Select attribute in product to determine.</label>
+                    <source_model>\Kruno\Swatchdb\Model\Config\CategoryList</source_model>
+                </field>
+            </group> -->
+
+        </section>
+    </system>
+</config>

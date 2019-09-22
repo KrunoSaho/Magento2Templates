@@ -36,6 +36,7 @@ class CategoryViewer implements \Kruno\Sample\Api\CategoryViewerInterface
         foreach ($results->getItems() as $item) {
             $data[] = $item->__toArray();
         }
+
         return $data;
     }
     
